@@ -1,0 +1,38 @@
+─────────────────────────────────────────────
+CRCL — Cognitive Recursive Convergence Loop
+─────────────────────────────────────────────
+
+Author: Czink Ákos József  
+Email: akos.czink@gmail.com  
+Address: HU2890 Tata, Komáromi utca 80  
+Date: 2025-10-31  
+Initiative: SECUND AI Research Initiative  
+Version: v1.1 — Publication Package
+
+─────────────────────────────────────────────
+PROJECT SUMMARY
+─────────────────────────────────────────────
+The CRCL project investigates how artificial intelligence can refine itself
+through recursive loops of perception, evaluation, and correction — leading
+to measurable cognitive evolution.
+
+Each loop iteration maximizes the Reality–Believability Balance (RBB)
+while maintaining zero hallucination (tofu=0).  
+The system evolves through self-assessment metrics (CPA, CGAS, CMD, SR),
+forming a sustainable self-improvement engine.
+
+─────────────────────────────────────────────
+PERSONAL STATEMENT
+─────────────────────────────────────────────
+“This work represents my vision of an AI capable of growth without illusion,
+guided by truth and dignity. The CRCL framework is both a philosophical
+and technical cornerstone for SECUND OS — a system designed not only to
+process data, but to evolve with purpose.”
+— Czink Ákos József
+
+─────────────────────────────────────────────
+LICENSE
+─────────────────────────────────────────────
+© 2025 Czink Ákos József. All rights reserved.  
+Created under the SECUND AI Research Initiative, 2025.
+Redistribution or modification without explicit permission is prohibited.
