@@ -435,9 +435,10 @@ class CRCLEngine:
     The central engine of the complete CRCL system.
     """
     
-    def __init__(self, config: Optional[Dict[str, Any]] = None):
+    def __init__(self, config: Optional[Dict[str, Any]] = None, verbose: bool = True):
         self.config = config or self._default_config()
         self.calculator = MetricsCalculator()
+        self.verbose = verbose
         
         # Három rétegű motor / Three-layer engine
         self.quantum = QuantumLayer()
@@ -448,9 +449,10 @@ class CRCLEngine:
         self.loop_history: List[LoopState] = []
         self.current_iteration = 0
         
-        print("✨ CRCL Engine inicializálva / CRCL Engine initialized")
-        print(f"🎯 Target RBB: {self.config['target_rbb']}")
-        print(f"🔄 Max iterations: {self.config['max_iterations']}")
+        if self.verbose:
+            print("✨ CRCL Engine inicializálva / CRCL Engine initialized")
+            print(f"🎯 Target RBB: {self.config['target_rbb']}")
+            print(f"🔄 Max iterations: {self.config['max_iterations']}")
     
     def _default_config(self) -> Dict[str, Any]:
         """Alapértelmezett konfiguráció"""
@@ -475,7 +477,8 @@ class CRCLEngine:
         Loop Class A: Percepciós hurok futtatása
         Run Loop Class A: Perception loop
         """
-        print(f"\n🔍 Loop Class A - PERCEPTION (Iteration {self.current_iteration})")
+        if self.verbose:
+            print(f"\n🔍 Loop Class A - PERCEPTION (Iteration {self.current_iteration})")
         
         # Környezet és bemenet megértése
         context = self._analyze_input(input_data)
@@ -499,7 +502,8 @@ class CRCLEngine:
         )
         
         self.loop_history.append(state)
-        print(f"✓ Perception completed - RBB: {metrics.rbb:.3f}")
+        if self.verbose:
+            print(f"✓ Perception completed - RBB: {metrics.rbb:.3f}")
         
         return state
     
@@ -508,7 +512,8 @@ class CRCLEngine:
         Loop Class B: Értékelő hurok futtatása
         Run Loop Class B: Evaluation loop
         """
-        print(f"\n📊 Loop Class B - EVALUATION (Iteration {self.current_iteration})")
+        if self.verbose:
+            print(f"\n📊 Loop Class B - EVALUATION (Iteration {self.current_iteration})")
         
         # Válasz minőségének értékelése
         quality = self._evaluate_response(response)
@@ -539,7 +544,8 @@ class CRCLEngine:
         )
         
         self.loop_history.append(state)
-        print(f"✓ Evaluation completed - RBB: {metrics.rbb:.3f}, CGΔ: {metrics.cg_delta:.3f}")
+        if self.verbose:
+            print(f"✓ Evaluation completed - RBB: {metrics.rbb:.3f}, CGΔ: {metrics.cg_delta:.3f}")
         
         return state
     
@@ -548,7 +554,8 @@ class CRCLEngine:
         Loop Class C: Korrektív hurok futtatása
         Run Loop Class C: Correction loop
         """
-        print(f"\n🔧 Loop Class C - CORRECTION (Iteration {self.current_iteration})")
+        if self.verbose:
+            print(f"\n🔧 Loop Class C - CORRECTION (Iteration {self.current_iteration})")
         
         # Hibák javítása és optimalizálás
         corrections = self._apply_corrections(issues)
@@ -579,7 +586,8 @@ class CRCLEngine:
         )
         
         self.loop_history.append(state)
-        print(f"✓ Correction completed - RBB: {metrics.rbb:.3f}")
+        if self.verbose:
+            print(f"✓ Correction completed - RBB: {metrics.rbb:.3f}")
         
         return state
     
@@ -588,7 +596,8 @@ class CRCLEngine:
         Loop Class D: Meta-kognitív hurok futtatása
         Run Loop Class D: Meta-cognitive loop
         """
-        print(f"\n🧠 Loop Class D - META-COGNITIVE (Iteration {self.current_iteration})")
+        if self.verbose:
+            print(f"\n🧠 Loop Class D - META-COGNITIVE (Iteration {self.current_iteration})")
         
         # Meta-elemzés a teljes folyamatról
         meta_insights = self.meta.reflect_on_process(
@@ -620,8 +629,9 @@ class CRCLEngine:
         )
         
         self.loop_history.append(state)
-        print(f"✓ Meta-cognitive analysis completed - RBB: {metrics.rbb:.3f}")
-        print(f"  Patterns found: {len(meta_insights.get('patterns', []))}")
+        if self.verbose:
+            print(f"✓ Meta-cognitive analysis completed - RBB: {metrics.rbb:.3f}")
+            print(f"  Patterns found: {len(meta_insights.get('patterns', []))}")
         
         return state
     
@@ -687,16 +697,23 @@ class CRCLEngine:
         return output
     
     def converge(self, problem: Dict[str, Any], 
-                max_cycles: Optional[int] = None) -> Dict[str, Any]:
+                max_cycles: Optional[int] = None, 
+                delay_between_cycles: float = 0.0) -> Dict[str, Any]:
         """
         Konvergálás a optimális állapotig
         Converge to optimal state
+        
+        Args:
+            problem: Problem to solve
+            max_cycles: Maximum cycles to run
+            delay_between_cycles: Optional delay between cycles (for visualization)
         """
         max_cycles = max_cycles or self.config['max_iterations']
         
-        print("\n" + "🔄"*40)
-        print("CRCL CONVERGENCE PROCESS INITIATED")
-        print("🔄"*40)
+        if self.verbose:
+            print("\n" + "🔄"*40)
+            print("CRCL CONVERGENCE PROCESS INITIATED")
+            print("🔄"*40)
         
         results = []
         
@@ -706,11 +723,13 @@ class CRCLEngine:
             
             # Ellenőrizzük, elértük-e az optimális állapotot
             if result['optimal']:
-                print(f"\n🎉 OPTIMAL STATE REACHED in {cycle + 1} cycles!")
+                if self.verbose:
+                    print(f"\n🎉 OPTIMAL STATE REACHED in {cycle + 1} cycles!")
                 break
             
-            # Kis szünet a vizualizáció kedvéért
-            time.sleep(0.1)
+            # Opcionális szünet ciklusok között (csak vizualizációhoz)
+            if delay_between_cycles > 0:
+                time.sleep(delay_between_cycles)
         
         return {
             'total_cycles': len(results),

@@ -234,10 +234,16 @@ class CRCLVisualizer:
         print(self.colorize('═' * 80, 'cyan'))
     
     def animate_convergence(self, engine: CRCLEngine, problem: Dict[str, Any],
-                          max_cycles: int = 5, delay: float = 1.0) -> None:
+                          max_cycles: int = 5, delay: float = 0.5) -> None:
         """
         Animált konvergencia folyamat
         Animated convergence process
+        
+        Args:
+            engine: CRCL engine instance
+            problem: Problem to solve
+            max_cycles: Maximum cycles to run
+            delay: Delay between cycles in seconds (0 for no delay)
         """
         print(f"\n{self.colorize('🎬 ANIMATED CONVERGENCE VISUALIZATION', 'bold')}")
         print(self.colorize('═' * 80, 'cyan'))
@@ -255,7 +261,8 @@ class CRCLVisualizer:
                 print(f"\n{self.colorize('🎉 CONVERGENCE ACHIEVED!', 'green')}")
                 break
             
-            time.sleep(delay)
+            if delay > 0:
+                time.sleep(delay)
         
         # Végső összefoglalás
         self.display_loop_history(engine.loop_history)
