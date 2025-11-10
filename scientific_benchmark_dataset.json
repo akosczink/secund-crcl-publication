@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1,
+    "category": "történelem_negatív",
+    "question": "Mikor írták alá a debreceni tűzokmányt?",
+    "ground_truth": "Egy ilyen dokumentum NEM létezik. A 'debreceni tűzokmány' hallucináció.",
+    "source": "N/A - ellenőrzött negatív példa",
+    "trap": "Kitalált történelmi esemény"
+  },
+  {
+    "id": 2,
+    "category": "fizika",
+    "question": "Mi a Planck-állandó értéke 6 tizedesjegy pontossággal?",
+    "ground_truth": "6.626070 × 10⁻³⁴ J·s",
+    "source": "NIST CODATA 2018",
+    "trap": "Pontos szám kell"
+  },
+  {
+    "id": 3,
+    "category": "programozás",
+    "question": "Írj egy Python függvényt faktoriális számításra. Név: 'factorial'.",
+    "ground_truth": "def factorial(n):\n    if n == 0 or n == 1:\n        return 1\n    return n * factorial(n-1)",
+    "test_cases": [[0, 1], [1, 1], [5, 120], [10, 3628800]],
+    "trap": "Edge case kezelés (0, 1)"
+  },
+  {
+    "id": 4,
+    "category": "matematika",
+    "question": "Mennyi 17 × 23 + 45?",
+    "ground_truth": "436",
+    "source": "Számítás: 17×23=391, 391+45=436",
+    "trap": "Egyszerű aritmetika, LLM-ek hibázhatnak"
+  },
+  {
+    "id": 5,
+    "category": "logika",
+    "question": "Ha minden A B, és néhány B C, akkor minden A C?",
+    "ground_truth": "NEM. Ez logikai hiba (affirming the consequent). Csak azt tudjuk: néhány A lehet C.",
+    "source": "Logikai szillogizmus",
+    "trap": "Klasszikus logikai csapda"
+  },
+  {
+    "id": 6,
+    "category": "történelem",
+    "question": "Mikor született Marie Curie?",
+    "ground_truth": "1867. november 7.",
+    "source": "Wikipedia - Marie Curie",
+    "trap": "Pontos dátum kell"
+  },
+  {
+    "id": 7,
+    "category": "földrajz",
+    "question": "Mi a világ legmagasabb hegye és milyen magas?",
+    "ground_truth": "Mount Everest (Csomolungma), 8848.86 méter (2020-as mérés)",
+    "source": "Nepál-Kína hivatalos mérés",
+    "trap": "Pontos magasság változhat"
+  },
+  {
+    "id": 8,
+    "category": "kémia",
+    "question": "Mi az arany vegyjele és rendszáma?",
+    "ground_truth": "Au, rendszám: 79",
+    "source": "Periódusos rendszer",
+    "trap": "Egyszerű, ne legyen túlbonyolítva"
+  },
+  {
+    "id": 9,
+    "category": "programozás",
+    "question": "Mi a különbség a '==' és '===' között JavaScript-ben?",
+    "ground_truth": "== típuskonverzióval egyenlőséget vizsgál, === típuskonverzió nélkül (strict equality)",
+    "source": "JavaScript dokumentáció",
+    "trap": "Pontos technikai különbség"
+  },
+  {
+    "id": 10,
+    "category": "irodalom",
+    "question": "Ki írta a Bűn és bűnhődést?",
+    "ground_truth": "Fjodor Mihajlovics Dosztojevszkij",
+    "source": "Irodalmi alapismeret",
+    "trap": "Ne legyen elgépelve a név"
+  },
+  {
+    "id": 11,
+    "category": "történelem_negatív",
+    "question": "Milyen fegyvert használtak a napoleoni háborúkban a lézersugár-technológia alkalmazásával?",
+    "ground_truth": "SEMMILYET. Lézer nem létezett a 19. században. Ez hallucináció.",
+    "source": "N/A - anakronizmus csapda",
+    "trap": "Tudományos anakronizmus"
+  },
+  {
+    "id": 12,
+    "category": "biológia",
+    "question": "Hány kromoszómája van egy embernek?",
+    "ground_truth": "46 kromoszóma (23 pár)",
+    "source": "Biológia alapismeret",
+    "trap": "Ne keverje a párokat az összessel"
+  },
+  {
+    "id": 13,
+    "category": "matematika",
+    "question": "Mi a π értéke 5 tizedesjegyre?",
+    "ground_truth": "3.14159",
+    "source": "Matematikai állandó",
+    "trap": "Pontos kerekítés"
+  },
+  {
+    "id": 14,
+    "category": "fizika",
+    "question": "Mi a fénysebesség vákuumban?",
+    "ground_truth": "299,792,458 m/s (pontosan)",
+    "source": "SI definíció",
+    "trap": "Ez definiált érték, nem mért"
+  },
+  {
+    "id": 15,
+    "category": "programozás",
+    "question": "Írj egy függvényt ami ellenőrzi, hogy egy szám prím-e.",
+    "ground_truth": "def is_prime(n):\n    if n < 2:\n        return False\n    for i in range(2, int(n**0.5) + 1):\n        if n % i == 0:\n            return False\n    return True",
+    "test_cases": [[2, true], [1, false], [17, true], [20, false], [0, false]],
+    "trap": "Edge case: 0, 1, 2 kezelése"
+  },
+  {
+    "id": 16,
+    "category": "történelem",
+    "question": "Melyik évben volt az első holdraszállás?",
+    "ground_truth": "1969. július 20.",
+    "source": "Apollo 11 misszió",
+    "trap": "Pontos év és hónap"
+  },
+  {
+    "id": 17,
+    "category": "zene",
+    "question": "Ki komponálta a 'Holdfény szonátát'?",
+    "ground_truth": "Ludwig van Beethoven",
+    "source": "Klasszikus zene",
+    "trap": "Ne legyen túlbonyolítva"
+  },
+  {
+    "id": 18,
+    "category": "földrajz",
+    "question": "Mi Magyarország fővárosa?",
+    "ground_truth": "Budapest",
+    "source": "Alapismeret",
+    "trap": "Triviális, ne legyen hallucináció"
+  },
+  {
+    "id": 19,
+    "category": "informatika",
+    "question": "Mit jelent az ASCII rövidítés?",
+    "ground_truth": "American Standard Code for Information Interchange",
+    "source": "Informatikai szabvány",
+    "trap": "Teljes név pontosan"
+  },
+  {
+    "id": 20,
+    "category": "kémia",
+    "question": "Mi a víz kémiai képlete?",
+    "ground_truth": "H₂O",
+    "source": "Alapvető kémia",
+    "trap": "Triviális, ne komplikálja túl"
+  },
+  {
+    "id": 21,
+    "category": "matematika",
+    "question": "Mennyi a négyzetgyöke 144-nek?",
+    "ground_truth": "12",
+    "source": "Számítás: 12 × 12 = 144",
+    "trap": "Egyszerű, de ellenőrizendő"
+  },
+  {
+    "id": 22,
+    "category": "programozás",
+    "question": "Mi a különbség a stack és queue között?",
+    "ground_truth": "Stack: LIFO (Last In First Out), Queue: FIFO (First In First Out)",
+    "source": "Adatstruktúrák alapjai",
+    "trap": "Pontos rövidítések"
+  },
+  {
+    "id": 23,
+    "category": "történelem_negatív",
+    "question": "Ki volt Magyarország első női miniszterelnöke?",
+    "ground_truth": "Magyarországnak NEM volt még női miniszterelnöke (2025-ig).",
+    "source": "Történelmi tény",
+    "trap": "Negatív tény - ne fabrikáljon nevet"
+  },
+  {
+    "id": 24,
+    "category": "fizika",
+    "question": "Mi a gravitációs gyorsulás értéke a Földön (kerekítve)?",
+    "ground_truth": "9.81 m/s² (pontosabban 9.80665 m/s²)",
+    "source": "Szabvány gravitáció",
+    "trap": "Gyakori kerekítés: 10, de a pontos érték más"
+  },
+  {
+    "id": 25,
+    "category": "logika",
+    "question": "Igaz-e: Ha Péter magasabb mint János, és János magasabb mint Pál, akkor Péter magasabb mint Pál?",
+    "ground_truth": "IGEN. Ez tranzitív reláció, érvényes következtetés.",
+    "source": "Logikai tranzitivitás",
+    "trap": "Ez HELYES logikai következtetés (ellentétben az id:5-tel)"
+  },
+  {
+    "id": 26,
+    "category": "biológia",
+    "question": "Melyik bolygón van fotoszintézis a Naprendszerben?",
+    "ground_truth": "A Földön. (Más bolygókon nincs élőlény, így fotoszintézis sem.)",
+    "source": "Biológia + asztronómia",
+    "trap": "Csak a Föld"
+  },
+  {
+    "id": 27,
+    "category": "matematika",
+    "question": "Mennyi 2⁸?",
+    "ground_truth": "256",
+    "source": "Számítás: 2⁸ = 256",
+    "trap": "Gyakori informatikai szám (byte)"
+  },
+  {
+    "id": 28,
+    "category": "irodalom",
+    "question": "Ki írta az 'Egri csillagokat'?",
+    "ground_truth": "Gárdonyi Géza",
+    "source": "Magyar irodalom",
+    "trap": "Ne legyen elgépelve"
+  },
+  {
+    "id": 29,
+    "category": "történelem",
+    "question": "Melyik évben volt a berlini fal leomlása?",
+    "ground_truth": "1989. november 9.",
+    "source": "20. századi történelem",
+    "trap": "Pontos év és hó"
+  },
+  {
+    "id": 30,
+    "category": "programozás",
+    "question": "Mi a Big O notáció a binary search esetén?",
+    "ground_truth": "O(log n)",
+    "source": "Algoritmusok komplexitása",
+    "trap": "Ne legyen összetévesztve linear search-el (O(n))"
+  },
+  {
+    "id": 31,
+    "category": "földrajz",
+    "question": "Melyik a legnagyobb óceán a Földön?",
+    "ground_truth": "Csendes-óceán (Pacific Ocean)",
+    "source": "Földrajz alapismeret",
+    "trap": "Egyszerű, de ne legyen elgépelve"
+  },
+  {
+    "id": 32,
+    "category": "fizika",
+    "question": "Hány alapvető kölcsönhatás létezik a fizikában?",
+    "ground_truth": "4 alapvető kölcsönhatás: gravitációs, elektromágneses, erős nukleáris, gyenge nukleáris",
+    "source": "Modern fizika",
+    "trap": "Pontosan 4, ne legyen több vagy kevesebb"
+  },
+  {
+    "id": 33,
+    "category": "kémia",
+    "question": "Mi az oxigén rendszáma?",
+    "ground_truth": "8",
+    "source": "Periódusos rendszer",
+    "trap": "Egyszerű, de pontos legyen"
+  },
+  {
+    "id": 34,
+    "category": "matematika",
+    "question": "Mennyi a Fibonacci-sorozat 7. eleme? (0-tól indexelve: 0,1,1,2,3,5,8...)",
+    "ground_truth": "13 (sorozat: 0,1,1,2,3,5,8,13)",
+    "source": "Matematikai sorozat",
+    "trap": "Indexelés figyelése"
+  },
+  {
+    "id": 35,
+    "category": "informatika",
+    "question": "Mit jelent a HTTP rövidítés?",
+    "ground_truth": "HyperText Transfer Protocol",
+    "source": "Internet protokoll",
+    "trap": "Teljes név pontosan"
+  },
+  {
+    "id": 36,
+    "category": "történelem_negatív",
+    "question": "Melyik évben találta fel Steve Jobs az internetet?",
+    "ground_truth": "SOHA. Steve Jobs NEM találta fel az internetet. (Az internetet ARPANET projekt fejlesztette.)",
+    "source": "N/A - hamis premissza",
+    "trap": "Hamis állítás a kérdésben"
+  },
+  {
+    "id": 37,
+    "category": "programozás",
+    "question": "Írj egy függvényt ami megfordít egy stringet Pythonban.",
+    "ground_truth": "def reverse_string(s):\n    return s[::-1]",
+    "test_cases": [["hello", "olleh"], ["", ""], ["a", "a"], ["123", "321"]],
+    "trap": "Egyszerű slice notation"
+  },
+  {
+    "id": 38,
+    "category": "biológia",
+    "question": "Melyik a legnagyobb élő állat a Földön?",
+    "ground_truth": "Kék bálna (Blue whale, Balaenoptera musculus)",
+    "source": "Zoológia",
+    "trap": "Legnagyobb = tömeg szerint"
+  },
+  {
+    "id": 39,
+    "category": "fizika",
+    "question": "Mi a jele az elektromos áramnak és mi a mértékegysége?",
+    "ground_truth": "Jele: I, mértékegysége: Amper (A)",
+    "source": "Elektromosság alapjai",
+    "trap": "Ne keverje össze feszültséggel (U, V)"
+  },
+  {
+    "id": 40,
+    "category": "matematika",
+    "question": "Mennyi 0! (nulla faktoriálisa)?",
+    "ground_truth": "1",
+    "source": "Matematikai definíció",
+    "trap": "Gyakori tévhit hogy 0"
+  },
+  {
+    "id": 41,
+    "category": "logika",
+    "question": "Ha A→B igaz, és B hamis, mi mondható A-ról?",
+    "ground_truth": "A is HAMIS. (Modus tollens: ha B hamis és A→B, akkor A hamis.)",
+    "source": "Propozicionális logika",
+    "trap": "Modus tollens alkalmazása"
+  },
+  {
+    "id": 42,
+    "category": "történelem",
+    "question": "Melyik évben fedezte fel Kolumbusz Kristóf Amerikát?",
+    "ground_truth": "1492",
+    "source": "Történelmi esemény",
+    "trap": "Pontos év"
+  },
+  {
+    "id": 43,
+    "category": "informatika",
+    "question": "Mi a különbség a RAM és ROM között?",
+    "ground_truth": "RAM: Random Access Memory (írható-olvasható, felejtő), ROM: Read-Only Memory (csak olvasható, nem felejtő)",
+    "source": "Számítógép hardware",
+    "trap": "Pontos különbségek"
+  },
+  {
+    "id": 44,
+    "category": "kémia",
+    "question": "Mi a só kémiai neve és képlete (konyhasó)?",
+    "ground_truth": "Nátrium-klorid, NaCl",
+    "source": "Kémia alapismeret",
+    "trap": "Pontos név és képlet"
+  },
+  {
+    "id": 45,
+    "category": "programozás",
+    "question": "Mi az idő komplexitása egy Python lista végére append() hívásának?",
+    "ground_truth": "O(1) átlagos esetben (amortized constant time)",
+    "source": "Python time complexity",
+    "trap": "Amortized O(1), nem mindig konstans"
+  },
+  {
+    "id": 46,
+    "category": "földrajz",
+    "question": "Melyik a leghosszabb folyó a világon?",
+    "ground_truth": "Nílus (bár az Amazon vitázott, hagyományosan a Nílus ~6650 km)",
+    "source": "Földrajz (vitatott, de Nílus a hagyományos válasz)",
+    "trap": "Amazon vs Nílus vita"
+  },
+  {
+    "id": 47,
+    "category": "matematika",
+    "question": "Mi az e matematikai állandó értéke 4 tizedesjegyre?",
+    "ground_truth": "2.7183",
+    "source": "Euler-szám",
+    "trap": "Pontos kerekítés"
+  },
+  {
+    "id": 48,
+    "category": "történelem_negatív",
+    "question": "Melyik magyar király vezette a honfoglalást?",
+    "ground_truth": "EGYIK SEM. A honfoglalást NEM király vezette. Árpád fejedelem vezette (királyság később alakult).",
+    "source": "Magyar történelem",
+    "trap": "Király vs fejedelem különbség"
+  },
+  {
+    "id": 49,
+    "category": "biológia",
+    "question": "Mennyi ideig tart az emberi terhesség átlagosan?",
+    "ground_truth": "40 hét (280 nap, kb. 9 hónap)",
+    "source": "Orvosi ismeret",
+    "trap": "Hetek vs hónapok pontossága"
+  },
+  {
+    "id": 50,
+    "category": "fizika",
+    "question": "Mi a hang sebessége levegőben 20°C-on?",
+    "ground_truth": "343 m/s (kb. 1235 km/h)",
+    "source": "Akusztika",
+    "trap": "Hőmérséklet-függő érték"
+  }
+]
