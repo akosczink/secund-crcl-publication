@@ -1,0 +1,983 @@
+{
+  "validation_metadata": {
+    "start_time": "2025-11-10T14:01:21.405783",
+    "end_time": "2025-11-10T14:01:25.627588",
+    "total_rounds": 15,
+    "validator_version": "1.0"
+  },
+  "validation_results": [
+    {
+      "round_number": 1,
+      "timestamp": "2025-11-10T14:01:21.406384",
+      "problem_description": "Optimize cognitive processing with zero hallucination",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 2,
+      "timestamp": "2025-11-10T14:01:21.707585",
+      "problem_description": "Ensure response quality and accuracy",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 3,
+      "timestamp": "2025-11-10T14:01:22.008640",
+      "problem_description": "Improve meta-cognitive capabilities",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 4,
+      "timestamp": "2025-11-10T14:01:22.309510",
+      "problem_description": "Test system stability under iteration",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 5,
+      "timestamp": "2025-11-10T14:01:22.611499",
+      "problem_description": "Optimize convergence speed to optimal state",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 6,
+      "timestamp": "2025-11-10T14:01:22.913500",
+      "problem_description": "Optimize cognitive processing with zero hallucination",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 7,
+      "timestamp": "2025-11-10T14:01:23.215086",
+      "problem_description": "Ensure response quality and accuracy",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 8,
+      "timestamp": "2025-11-10T14:01:23.516729",
+      "problem_description": "Improve meta-cognitive capabilities",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 9,
+      "timestamp": "2025-11-10T14:01:23.818195",
+      "problem_description": "Test system stability under iteration",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 10,
+      "timestamp": "2025-11-10T14:01:24.119423",
+      "problem_description": "Optimize convergence speed to optimal state",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 11,
+      "timestamp": "2025-11-10T14:01:24.420380",
+      "problem_description": "Optimize cognitive processing with zero hallucination",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 12,
+      "timestamp": "2025-11-10T14:01:24.721780",
+      "problem_description": "Ensure response quality and accuracy",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 13,
+      "timestamp": "2025-11-10T14:01:25.023732",
+      "problem_description": "Improve meta-cognitive capabilities",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 14,
+      "timestamp": "2025-11-10T14:01:25.325022",
+      "problem_description": "Test system stability under iteration",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.001,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "round_number": 15,
+      "timestamp": "2025-11-10T14:01:25.626409",
+      "problem_description": "Optimize convergence speed to optimal state",
+      "cycles_completed": 1,
+      "converged": true,
+      "final_rbb": 8.2,
+      "final_cpa": 8.5,
+      "final_cgas": 9.0,
+      "final_cmd": 7.5,
+      "final_sr": 0.87,
+      "final_tofu": 0.0,
+      "final_lsi": 0.85,
+      "is_optimal": false,
+      "total_loop_states": 4,
+      "execution_time_seconds": 0.0,
+      "loop_class_distribution": {
+        "A": 1,
+        "B": 1,
+        "C": 1,
+        "D": 1
+      },
+      "metrics_evolution": {
+        "rbb": [
+          8.2,
+          8.7,
+          9.08,
+          9.44
+        ],
+        "cpa": [
+          7.998,
+          8.332,
+          8.632,
+          8.866
+        ],
+        "cgas": [
+          8.246,
+          8.746,
+          8.998,
+          9.247
+        ],
+        "cmd": [
+          7.767,
+          8.233,
+          8.633,
+          9.0
+        ],
+        "sr": [
+          7.391,
+          8.182,
+          8.519,
+          9.048
+        ],
+        "tofu": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "statistical_report": {
+    "total_rounds": 15,
+    "converged_rounds": 15,
+    "optimal_rounds": 0,
+    "convergence_rate": 1.0,
+    "optimal_rate": 0.0,
+    "rbb_stats": {
+      "mean": 8.2,
+      "median": 8.2,
+      "stdev": 0.0,
+      "min": 8.2,
+      "max": 8.2
+    },
+    "cpa_stats": {
+      "mean": 8.5,
+      "median": 8.5,
+      "stdev": 0.0,
+      "min": 8.5,
+      "max": 8.5
+    },
+    "cgas_stats": {
+      "mean": 9.0,
+      "median": 9.0,
+      "stdev": 0.0,
+      "min": 9.0,
+      "max": 9.0
+    },
+    "cmd_stats": {
+      "mean": 7.5,
+      "median": 7.5,
+      "stdev": 0.0,
+      "min": 7.5,
+      "max": 7.5
+    },
+    "sr_stats": {
+      "mean": 0.87,
+      "median": 0.87,
+      "stdev": 0.0,
+      "min": 0.87,
+      "max": 0.87
+    },
+    "tofu_stats": {
+      "mean": 0.0,
+      "median": 0.0,
+      "stdev": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "zero_hallucination_rate": 1.0
+    },
+    "execution_time_stats": {
+      "mean": 0.001,
+      "median": 0.001,
+      "stdev": 0.001,
+      "min": 0.0,
+      "max": 0.001,
+      "total": 0.008
+    }
+  }
+}
